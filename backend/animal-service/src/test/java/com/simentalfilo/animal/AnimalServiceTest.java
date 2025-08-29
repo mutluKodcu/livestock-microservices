@@ -1,8 +1,8 @@
-package com.simentalfilo.dmtbkts.finance;
+package com.simentalfilo.animal;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
-public class FinanceServiceTest {
+public class AnimalServiceTest {
   @Test
   void contextLoads(){}
 }
