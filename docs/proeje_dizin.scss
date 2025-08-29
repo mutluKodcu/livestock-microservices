@@ -1,0 +1,63 @@
+livestock-microservices/
+│
+├── README.md
+├── docker-compose.yml
+├── docs/
+│   ├── uml/
+│   │   ├── class-diagram.png
+│   │   ├── sequence-diagram.png
+│   │   └── deployment-diagram.png
+│   └── additional-docs.md
+│
+├── backend/
+│   ├── animal-service/
+│   │   ├── src/main/java/com/livestock/animal/
+│   │   ├── src/main/resources/
+│   │   │   ├── application.yml
+│   │   │   └── db/migration/  # Flyway migration scripts
+│   │   ├── Dockerfile
+│   │   └── pom.xml
+│   │
+│   ├── finance-service/
+│   │   ├── src/main/java/com/livestock/finance/
+│   │   ├── src/main/resources/
+│   │   │   ├── application.yml
+│   │   │   └── db/migration/
+│   │   ├── Dockerfile
+│   │   └── pom.xml
+│   │
+│   ├── stream-processor/
+│   │   ├── src/main/java/com/livestock/stream/
+│   │   ├── src/main/resources/
+│   │   │   └── application.yml
+│   │   ├── Dockerfile
+│   │   └── pom.xml
+│   │
+│   ├── notification-service/
+│   │   ├── src/main/java/com/livestock/notification/
+│   │   ├── src/main/resources/application.yml
+                               │   │   ├── Dockerfile
+                               │   │   └── pom.xml
+                               │   │
+                               │   └── nlp-service/
+│       ├── src/main/java/com/livestock/nlp/
+│       ├── src/main/resources/application.yml
+                               │       ├── Dockerfile
+                               │       └── pom.xml
+                               │
+                               ├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Navbar.js
+│   │   │   └── dosya_dizini.css   # Örnek CSS
+                                     │   │   ├── pages/
+│   │   │   ├── HomePage.js
+│   │   │   └── dosya_dizini.css   # Örnek CSS
+                                     │   │   ├── App.js
+                                     │   │   └── index.js
+                                     │   ├── public/
+│   │   └── index.html
+│   ├── package.json
+│   └── README.md
+│
+└── .gitignore
